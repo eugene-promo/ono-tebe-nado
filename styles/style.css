@@ -208,3 +208,41 @@
   font-size: 20px;
   text-transform: lowercase;
 }
+
+.about {
+  display: grid;
+  grid-template-columns: 352px 705px;
+  grid-template-rows: 237px 1fr;
+  margin-bottom: 180px;
+}
+
+.about__logo {
+  grid-row: 1 / 3;
+  justify-self: center;
+}
+
+.about__logo__circle {
+  padding: 61px 45px;
+  width: 237px;
+  height: 237px;
+  background-color: #000;
+  border-radius: 270px;
+}
+
+.about__logo__circle__image {
+
+}
+
+.about__text__heading {
+  align-self: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 20px;
+}
