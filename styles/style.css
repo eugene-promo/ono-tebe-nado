@@ -1,1 +1,148 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  align-items: center;
+  margin: 92px 24px;
+  padding: 0 30px;
+}
+
+.header__menu {
+
+}
+
+.header__menu__list {
+  display: flex;
+  gap: 28px;
+  padding: 0;
+  list-style-type: circle;
+  font-size: 18px;
+}
+
+.header__menu__list__item {
+
+}
+
+.header__menu__list__item:first-child {
+  list-style-type: none;
+}
+
+.header__menu__list__item__link {
+  padding-left: 5px;
+  text-transform: lowercase;
+}
+
+.header__menu__list__item:first-child .header__menu__list__item__link {
+  padding-left: 0;
+}
+
+.header__menu__list__item__link--active {
+  text-decoration: none;
+}
+
+.header__menu__list__item__link:hover {
+  text-decoration: none;
+}
+
+.header__logo {
+
+}
+
+.header__logo__img {
+  width: 148px;
+  height: 105px;
+}
+
+.header__contacts {
+  display:flex;
+  justify-self: end;
+  flex-direction: column;
+  width: 240px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header__contacts__phone {
+
+}
+
+.header__contacts__email {
+
+}
+
+.header__contacts__address {
+  font-style: normal;
+}
+
+.hero {
+  height: 764px;
+  margin: 0 9px;
+  padding: 162px 60px 48px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+}
+
+.hero__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 130px;
+  font-weight: 700;
+  font-size: 100px;
+  color: #fff;
+  line-height: 115%;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+}
+
+.hero__heading__row {
+
+}
+
+.hero__heading__row--center {
+  text-align: center;
+}
+
+.hero__heading__row--right {
+  text-align: right;
+}
+
+.hero__promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  width: 100%;
+  height: 52px;
+}
+
+.hero__promo__text {
+  display: flex;
+  justify-content: space-between;
+  width: 630px;
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+.hero__promo__text__stratch {
+
+}
+
+.hero__promo__button {
+  display: inline-block;
+  padding: 12px 30px;
+  box-sizing: border-box;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.hero__button:hover {
+  background-color: #fff;
+  color: #000;
+}}
