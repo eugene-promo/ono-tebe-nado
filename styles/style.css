@@ -2,12 +2,27 @@
   display: grid;
   grid-template-columns: 437px 134px 434px;
   align-items: center;
-  padding: 86px 24px 86px 58px;
+  padding: 83px 24px 83px 58px;
   background-color: #fff;
 }
 
-.header__menu__list {
+.menu__list {
   display: flex;
+}
+
+.menu__list__item__link {
+  text-transform: lowercase;
+}
+
+.menu__list__item__link--active {
+  text-decoration: none;
+}
+
+.menu__list__item__link:hover {
+  text-decoration: none;
+}
+
+.header__menu__list {
   gap: 28px;
   padding: 0;
   list-style-type: circle;
@@ -20,19 +35,10 @@
 
 .header__menu__list__item__link {
   padding-left: 5px;
-  text-transform: lowercase;
 }
 
 .header__menu__list__item:first-child .header__menu__list__item__link {
   padding-left: 0;
-}
-
-.header__menu__list__item__link--active {
-  text-decoration: none;
-}
-
-.header__menu__list__item__link:hover {
-  text-decoration: none;
 }
 
 .header__logo__img {
@@ -40,18 +46,20 @@
   height: 104px;
 }
 
-.header__contacts {
-  display:flex;
-  justify-self: end;
+.contacts {
+  display: flex;
   flex-direction: column;
   width: 240px;
-  font-size: 18px;
   line-height: 24px;
 }
 
-.header__contacts__address {
+.address {
   font-style: normal;
   max-width: 240px;
+}
+
+.header__contacts {
+  justify-self: end;
 }
 
 .hero {
@@ -64,7 +72,7 @@
   padding: 162px 60px 48px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
 .hero__content__heading {
@@ -72,12 +80,12 @@
   flex-direction: column;
   gap: 18px;
   margin-bottom: 130px;
-  font-weight: 700;
   font-size: 100px;
-  color: #fff;
+  font-weight: 700;
   line-height: 115%;
   text-transform: uppercase;
   letter-spacing: 30px;
+  color: #fff;
 }
 
 .hero__content__heading__row--center {
@@ -111,12 +119,11 @@
 .hero__content__promo__button {
   display: inline-block;
   padding: 12px 30px;
-  box-sizing: border-box;
-  color: #fff;
   border: 1px solid #fff;
+  font-size: 22px;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 22px;
 }
 
 .hero__content__promo__button:hover {
@@ -125,7 +132,7 @@
 }
 
 .lots {
-  padding: 0 33px 176px;
+  padding: 0 33px 177px;
   background-color: #fff;
 }
 
@@ -138,17 +145,17 @@
 
 .lots__list {
   display: grid;
-  grid-template-columns: repeat( 3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   height: 554px;
   list-style-type: none;
 }
 
 .lots__list__item {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
   padding: 48px 38px 46px;
   overflow: hidden;
   color: #fff;
@@ -156,24 +163,12 @@
 }
 
 .lots__list__item__image {
-  position:absolute;
+  position: absolute;
   top: 0;
-  left: -0;
+  left: 0;
   height: 100%;
   object-fit: cover;
   opacity: 0.6;
-}
-
-.lots__list__item--film {
-  background-image: url(../images/card-lot-01.jpg);
-}
-
-.lots__list__item--book {
-  background-image: url(../images/card-lot-02.jpg);
-}
-
-.lots__list__item--picture {
-  background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots__list__item__link {
@@ -248,51 +243,23 @@
   background-color: #fff;
 }
 
-.footer__contacts {
-  display:flex;
-  flex-direction: column;
-  width: 240px;
-
-  line-height: 24px;
-}
-
-.footer__contacts__address {
-  font-style: normal;
-}
-
-.footer__menu {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer__menu__list {
+  flex-direction: column;
   list-style-type: none;
   text-align: center;
 }
 
-.footer__menu__list__item__link {
-  text-transform: lowercase;
-}
-
-.footer__menu__list__item__link--active {
-  text-decoration: none;
-}
-
-.footer__menu__list__item__link:hover {
-  text-decoration: none;
-}
-
-.footer__social-links {
+.footer__social {
   justify-self: end;
 }
 
-.footer__social-links__list {
+.footer__social__list {
   display: flex;
   gap: 46px;
   list-style-type: none;
 }
 
-.footer__social-links__list__link__image {
+.footer__social__list__item__link__image {
   width: 48px;
   height: 48px;
 }
