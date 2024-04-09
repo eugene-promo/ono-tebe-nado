@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: 437px 134px 434px;
+  grid-template-columns: 425px 134px 430px;
   align-items: center;
   padding: 90px 24px 90px 58px;
   background-color: #fff;
@@ -53,14 +53,15 @@
   max-width: 240px;
   line-height: 24px;
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 .header__contacts {
   justify-self: end;
 }
 
-.hero {
-  padding: 162px 60px 48px;
+.heroe {
+  padding: 163px 34px 48px 55px;
   background-color: #fff;
   background-image: url(../images/cover.jpg);
   background-position: top center;
@@ -68,11 +69,10 @@
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 
-.hero__content__heading {
+.heroe__content__heading {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-bottom: 130px;
+  margin-bottom: 122px;
   font-size: 100px;
   font-weight: 700;
   line-height: 115%;
@@ -81,49 +81,61 @@
   color: #fff;
 }
 
-.hero__content__heading__row--center {
+.heroe__row__1 {
+  padding-bottom: 10px;
+}
+
+.heroe__row__2 {
+  padding-bottom: 5px;
+  padding-right: 21px;
+}
+
+.heroe__content__heading__row--center {
   text-align: center;
 }
 
-.hero__content__heading__row--right {
+.heroe__content__heading__row--right {
   text-align: right;
 }
 
+.ls-25 {
+  letter-spacing: 25px;
+}
+
 .ls-28 {
-  display:inline;
   letter-spacing: 28px;
 }
 
+.ls-29 {
+  letter-spacing: 29px;
+}
+
 .ls-30 {
-  display:inline;
   letter-spacing: 30px;
 }
 
 .ls-57 {
-  display:inline;
   letter-spacing: 57px;
 }
 
 .ls-59 {
-  display:inline;
   letter-spacing: 59px;
 }
 
 .ls-60 {
-  display:inline;
   letter-spacing: 60px;
 }
 
-.hero__content__promo {
+.heroe__content__promo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 20px;
+  padding-left: 34px;
   width: 100%;
   height: 52px;
 }
 
-.hero__content__promo__text {
+.heroe__content__promo__text {
   display: flex;
   justify-content: space-between;
   font-size: 22px;
@@ -134,9 +146,14 @@
   word-spacing: 17px;
 }
 
-.hero__content__promo__button {
+.heroe__content__promo__text--intent {
+  padding-left: 27px;
+}
+
+.heroe__content__promo__button {
   display: inline-block;
   padding: 12px 30px;
+  margin-right: 23px;
   border: 1px solid #fff;
   font-size: 22px;
   color: #fff;
@@ -146,7 +163,7 @@
   cursor: pointer;
 }
 
-.hero__content__promo__button:hover {
+.heroe__content__promo__button:hover {
   background-color: #fff;
   color: #000;
 }
@@ -157,7 +174,7 @@
 }
 
 .lots_heading {
-  margin: 0 27px 37px;
+  margin: 0 27px 26px 39px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -217,6 +234,14 @@
   color: #fff;
 }
 
+.ls-004 {
+  letter-spacing: 0.04rem;
+}
+
+.ls-0015 {
+  letter-spacing: 0.015rem;
+}
+
 .lots__list__item__excerpt {
   z-index: 1;
   font-size: 20px;
@@ -263,7 +288,7 @@
 }
 
 .about__info__heading {
-  margin: 97px 0 100px;
+  margin: 97px 0 102px;
   align-self: center;
   font-size: 40px;
   font-weight: 700;
@@ -273,7 +298,7 @@
 .about__info__text {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 23px;
   padding-right: 12px;
   font-size: 20px;
 }
@@ -284,6 +309,10 @@
   padding: 0 58px 90px;
   font-size: 18px;
   background-color: #fff;
+}
+
+.ls-0 {
+  letter-spacing: 0;
 }
 
 .footer__menu__list {
